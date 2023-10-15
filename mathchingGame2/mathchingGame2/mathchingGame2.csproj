@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8BF29A1D-AEF1-4245-B85C-0F0A1DB812C8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>mathchingGame2</RootNamespace>
+    <AssemblyName>mathchingGame2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AplastaLaMarmota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AplastaLaMarmota.Designer.cs">
+      <DependentUpon>AplastaLaMarmota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda.Designer.cs">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="creditos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="creditos.Designer.cs">
+      <DependentUpon>creditos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion.Designer.cs">
+      <DependentUpon>Informacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PortadaGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PortadaGame.Designer.cs">
+      <DependentUpon>PortadaGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Video.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Video.Designer.cs">
+      <DependentUpon>Video.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoJuego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoJuego.Designer.cs">
+      <DependentUpon>VideoJuego.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AplastaLaMarmota.resx">
+      <DependentUpon>AplastaLaMarmota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda.resx">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="creditos.resx">
+      <DependentUpon>creditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion.resx">
+      <DependentUpon>Informacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PortadaGame.resx">
+      <DependentUpon>PortadaGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Video.resx">
+      <DependentUpon>Video.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoJuego.resx">
+      <DependentUpon>VideoJuego.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gatitoreference.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marmota_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marmota_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marmota_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marmota_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AgujeroVacio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sonidofondo.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salidaMarmota.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\falla.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bien.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hand Drawn Cartoon Grass Lawn Background Elements Wallpaper Image For Free Download - Pngtree.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paisajes Fondos Escenarios ilustraciones gratis - My Little House.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d888662c-bd1b-49ae-b0f6-fec2dc129244.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asdasdasdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llama.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.jfif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
